@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Budget Calculator</title>
+</head>
+<body>
+    <div class="eecu-logo">
+        <!-- <img src="https://resource.digitalinsight.com/branding/39/05039/img/05039-08.05.20_129x35_300dpi-03-01.png?t=1596672266556"> -->
+    </div>
+    <div class = career-title>
+        <h1>Career Options</h1>
+    </div>
+        <main>
+        <ul class="career" id="jobList">
+            <!-- <span class="title">${job[0]}</span> <span class="income">\$${job[1]}</span>` -->
+        </ul>
+        <div class = deductions-title>
+            <h1>Pay deductions</h1>
+        </div>
+            <div class="career-option-box" id = jobList>
+                <form>
+                    <label for="career-option">Career Option: </label>
+                    <input type="text" id="c_option" name="c_option" disabled><br>
+                </form>
+            </div>
+            <div class="gross-annual-box">
+                <form>
+                    <label for="gross-annual">Gross Annual Income: $</label>
+                    <input type="text" id="g_annual" name="g_annual" disabled><br>
+                </form>
+            </div>
+            <div class="gross-monthly-box">
+                <form>
+                    <label for="gross-monthly">Gross Monthly Income: (Divide by 12): $</label>
+                    <input type="text" id="g_monthly" name="g_monthly" disabled><br>
+                </form>
+            </div>
+            <div class="fed-tax-box">
+                <form>
+                    <label for="fed-taxes">Federal Taxes: $ </label>
+                    <input type="text" id="f_tax" name="f_tax" disabled><br>
+                    <label for="12% Multi"> x (12%) 0.12 = $ </label>
+                    <input type="text" id="f_tax x 0.12" name="f_tax x 0.12" disabled><br>
+                </form>
+            </div>
+            <div class="state-tax-box">
+                <form>
+                    <label for="state-taxes">State Taxes: $ </label>
+                    <input type="text" id="s_tax" name="s_tax" disabled><br>
+                    <label for="7% Multi"> x (7%) 0.07 = $ </label>
+                    <input type="text" id="s_tax x 0.07" name="s_tax x 0.07" disabled><br>
+                </form>
+            </div>
+            <div class="social-security-box">
+                <form>
+                    <label for="social-security">Social Security: $</label>
+                    <input type="text" id="s_sec" name="s_sec" disabled><br>
+                    <label for="6.2 Multi"> x (6.2%) 0.062 = $</label>
+                    <input type="text" id="s_sec x 0.062" name="s_sec x 0.062" disabled><br>
+                </form>
+            </div>
+            <div class="medicare-box">
+                <form>
+                    <label for="medcare">Medicare: $</label>
+                    <input type="text" id="medcare" name="medcare" disabled><br>
+                    <label for="1.45 Multi"> x (1.45%) 0.0145 = $</label>
+                    <input type="text" id="medcare x 0.0145" name="medcare x 0.0145" disabled><br>
+                </form>
+            </div>
+            <div class="state-disability-box">
+                <form>
+                    <label for="state-disability">State Disability: $</label>
+                    <input type="text" id="s_disability" name="s_disability" disabled><br>
+                    <label for="0.01 Multi"> x (1%) 0.01 = $</label>
+                    <input type="text" id="s_disability x 0.01" name="s_disability x 0.01" disabled><br>
+                </form>
+            </div>
+            <div class="retirement-investment-box">
+                <form>
+                    <label for="retirement-invesment">Retirement Invesment: $</label>
+                    <input type="text" id="r_invest" name="r_invest" disabled><br>
+                    <label for="0.05 Multi"> x (5%) 0.05 = $</label>
+                    <input type="text" id="r_invest x 0.05" name="r_invest x 0.05" disabled><br>
+                </form>
+            </div>
+                <div class="medical-insurance">
+                    <p>Medical Insurance: $180.00 (No flat rates)</p>
+                </div>
+            <div class="deductions">
+                <form>
+                    <label for="total-deductions">Total Deductions: $</label>
+                    <input type="text" id="t_deduct" name="t_deduct" disabled><br>
+                </form>
+            </div>
+            <div class="deductions2">
+            <form>
+                <label for="g-monthly-deduct">Gross Monthly Income: $</label>
+                <input type="text" id="g_monthly_total" name="g-monthly-total" disabled><br>
+                <label for="t_deduct-deduct"> - Total Deductions: $</label>
+                <input type="text" id="t_deduct_total" name="t_deduct_total" disabled><br>
+                <label for="n-monthly-deduct"> = Net Monthly Income: $</label>
+                <input type="text" id="m_monthly_total" name="m_monthly_total" disabled><br>
+            </form>
+            </div>
+                <div class="house-payment-desc">
+                    <P>House Payment</P>
+                </div>
+                <div class="house-payment-math">
+                <form>
+                    <label for="g-monthly-deduct-house">Gross Monthly Income: $</label>
+                    <input type="text" id="g_monthly_total_house" name="g_monthly-total-house" disabled><br>
+                    <label for="h-payment-max"> x (33%) 0.33 = Max Monthly House Payment: $</label>
+                    <input type="text" id="max_payment" name="max_payment" disabled><br>
+                </form>
+            </div>
+        </main>
+    <script src="app.js"></script>
+</body>
+</html>
